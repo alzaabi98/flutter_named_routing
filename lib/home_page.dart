@@ -19,7 +19,8 @@ class _HomePageState extends State<HomePage> {
             RaisedButton(
               child: Text('Login'),
               onPressed: () {
-                Navigator.pushNamed(context, '/login');
+                Navigator.pushNamed(context, '/login',
+                    arguments: {'title': '`please login securly'});
               },
             ),
             SizedBox(
